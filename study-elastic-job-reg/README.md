@@ -14,12 +14,18 @@ demo 代码:
 
         regCenter.init();//注册中心初始化
 
-这里仿照elastic-job源代码,仿写了注册中心连接zk服务的代码,ejob使用的curator,解决使用原生zk的一些问题\n
-代码主要包括RegistryCenter和RegistryCenterConfiguration两个类的实现\n
-AbstractRegistryCenterConfiguration     定义注册中心配置的一些信息(本地信息能否成重写注册中心的数据等)\n
-        ->ZookeeperConfiguration        定义zk的一些配置信息(zk的serverlist,namespace,重连次数等等)\n
+这里仿照elastic-job源代码,仿写了注册中心连接zk服务的代码,ejob使用的curator,解决使用原生zk的一些问题
 
-RegistryCenter                          定义注册中心的一些基础方法\n
-        ->CoordinatorRegistryCenter     定义分布式注册中心的一些方法\n
-            ->ZookeeperRegistryCenter   实现注册中心方法通过zk的方式\n
+代码主要包括RegistryCenter和RegistryCenterConfiguration两个类的实现
+
+
+AbstractRegistryCenterConfiguration     定义注册中心配置的一些信息(本地信息能否成重写注册中心的数据等)
+
+        ->ZookeeperConfiguration        定义zk的一些配置信息(zk的serverlist,namespace,重连次数等等)
+
+RegistryCenter                          定义注册中心的一些基础方法
+
+        ->CoordinatorRegistryCenter     定义分布式注册中心的一些方法
+
+            ->ZookeeperRegistryCenter   实现注册中心方法通过zk的方式
 
