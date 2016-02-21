@@ -23,9 +23,9 @@ demo 代码:
 
         ->ZookeeperConfiguration                定义zk的一些配置信息(zk的serverlist,namespace,重连次数等等)
 
-        RegistryCenter                          定义注册中心的一些基础方法
+        RegistryCenter                          定义注册中心的基础方法
 
-        ->CoordinatorRegistryCenter             定义分布式注册中心的一些方法
+        ->CoordinatorRegistryCenter             定义分布式注册中心的方法
 
-        -->ZookeeperRegistryCenter              实现注册中心方法通过zk的方式
+        -->ZookeeperRegistryCenter              实现分布式注册中心方法通过zk的方式
 
