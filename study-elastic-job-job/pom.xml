@@ -10,8 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>study-elastic-job</groupId>
-    <artifactId>study-elastic-job-reg</artifactId>
-
+    <artifactId>study-elastic-job-job</artifactId>
 
     <build>
         <plugins>
